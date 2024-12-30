@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        background: rgba(245, 245, 247, 0.8);
+        backdrop-filter: blur(10px);
+        width: 100%;
+      }
+      .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52.5px;
+        background: #fff;
+        width: 100%;
+      }
+      .link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .buttoncon {
+        display: flex;
+        gap: 15px;
+      }
+      .morebutton {
+        border: none;
+        width: 130.72px;
+        height: 44px;
+        padding: 12px 21.8px 12px 22px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 980px;
+        background: #0071e3;
+        color: white;
+      }
+      .buybutton {
+        width: 73.2px;
+        height: 44px;
+        padding: 12px 21.8px 12px 22px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 980px;
+        border: 1px solid #2997ff;
+        color: #2997ff;
+        background: transparent;
+      }
+      .imgpos {
+        position: relative;
+      }
+      .textpos {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .itemscon {
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .iphone {
+        width: 335.11px;
+        height: 60px;
+        color: #f5f5f7;
+        text-align: center;
+        font-family: Inter;
+        font-size: 51.406px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 116.717% */
+        letter-spacing: -0.28px;
+      }
+      .hello {
+        width: 288.89px;
+        height: 32px;
+        color: #f5f5f7;
+        text-align: center;
+        font-family: Inter;
+        font-size: 24.281px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 131.789% */
+        letter-spacing: 0.196px;
+      }
+      .imgsize {
+        width: 100%;
+        object-fit: cover;
+      }
+      .giftitems {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 50px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .gifttext1 {
+        width: 263.54px;
+        height: 60px;
+        color: #1d1d1f;
+        text-align: center;
+        font-family: Inter;
+        font-size: 50.422px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 118.996% */
+        letter-spacing: -0.28px;
+      }
+      .gifttext2 {
+        width: 408.43px;
+        height: 32px;
+        color: #1d1d1f;
+        text-align: center;
+        font-family: Inter;
+        font-size: 24.391px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 131.198% */
+        letter-spacing: 0.196px;
+      }
+      .imgcon {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+      }
+      .imgcon1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .imgcon2 {
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .imgcon3 {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .imgconback {
+        width: 417px;
+        height: 236px;
+        flex-shrink: 0;
+      }
+      .randb {
+        background-color: #1b2632;
+      }
+      .imgrandb {
+        margin: 20px 0 20px 15px;
+      }
+      .tabpanel {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tab {
+        width: 340px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .tablist {
+        border-radius: 50%;
+        background-color: grey;
+        width: 10px;
+        height: 10px;
+      }
+      .airpod2con
+      {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .textcolorblack
+      {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./apple.html"> <img src="SVG.svg" alt="applelogo" /> </a>
+     
+      <a href="../page2/page2.html"> Store </a>
+      <span> Mac </span>
+      <span> IPad </span>
+      <span> IPhone </span>
+      <span> Watch </span>
+      <span> Vision </span>
+      <span> Airpods </span>
+      <span> TV & Home </span>
+      <span> Entertainment </span>
+      <span> Accessories </span>
+      <span> Support </span>
+      <img src="search.svg" alt="" />
+      <img src="market.svg" alt="" />
+    </div>
+    <div class="section1">
+      <p>
+        We’re donating $5 to the Global Fund for every purchase made with
+        Apple Pay at Apple. Through 12/8.
+      </p>
+      <p>Shop</p>
+      <img src="Icon.svg" alt="" />
+    </div>
+    <div class="link">
+      <img class="imgsize" src="Figure.png" alt="" />
+      <div class="itemscon">
+        <span class="textpos iphone">IPone 16 Pro</span>
+        <span class="textpos hello">Hello, Apple Intelligence</span>
+        <div class="buttoncon">
+          <button class="morebutton">Learn more</button>
+          <button class="buybutton">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="link">
+      <img class="imgsize" src="iphone16.png" alt="" />
+      <div class="itemscon">
+        <span class="textpos">IPone 16 Pro</span>
+        <span class="textpos hello">Hello, Apple Intelligence</span>
+        <div class="buttoncon">
+          <button class="morebutton">Learn more</button>
+          <button class="buybutton">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="link">
+      <img class="imgsize" src="appleimg.png" alt="" />
+      <div class="giftitems">
+        <span class="gifttext1">Gift magic.</span>
+        <span class="gifttext2">Make their holiday wish come true.</span>
+        <button class="morebutton">Shop gifts</button>
+      </div>
+    </div>
+    <div class="imgcon1">
+      <div>
+        <div class="imgcon">
+          <div class="imgcon">
+            <img class="imgsize" src="ipad.png" alt="" />
+            <div class="itemscon">
+              <span class="textpos iphone">IPone 16 Pro</span>
+              <span class="textpos hello">Two sizes. Faster chip. Does it all.</span>
+              <span id="">Hello, Apple Intelligence.</span>
+              <div class="buttoncon">
+                <button class="morebutton">Learn more</button>
+                <button class="buybutton">Buy</button>
+              </div>
+            </div>
+            </div>
+            <div class="imgcon">
+              <img class="imgsize" src="airpod2.png" alt="" />
+              <div class="airpod2con">
+                <span class="textpos iphone">IPone 16 Pro</span>
+                <span class="textpos hello">Hello, Apple Intelligence</span>
+                <div class="buttoncon">
+                  <button class="morebutton">Learn more</button>
+                  <button class="buybutton">Buy</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="imgcon">
+          <div class="imgcon">
+            <img class="imgsize" src="iwatch.png" alt="" />
+            <div class="itemscon">
+              <img src="iwaych.png" alt="">
+              <span class="textpos hello textcolorblack">Thinstant classic.</span>
+              <div class="buttoncon">
+                <button class="morebutton">Learn more</button>
+                <button class="buybutton">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="imgcon">
+            <img class="imgsize" src="macbook.png" alt="" />
+            <div class="itemscon">
+              <span class="textpos iphone textcolorblack">MacBook Air</span>
+              <span class="textpos hello textcolorblack">Lean. Mean. M3 machine.</span>
+              <div class="buttoncon">
+                <button class="morebutton">Learn more</button>
+                <button class="buybutton">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="imgcon">
+          <div class="imgcon">
+            <img class="imgsize" src="tradein.png" alt="" />
+            <div class="itemscon">
+              <img src="tradeinicon.png" alt="">
+              <span class="textpos hello textcolorblack">Get $180–$650 in credit when you
+                trade in iPhone 12 or higher.3</span>
+              <div class="buttoncon">
+                <button class="morebutton">Learn more</button>
+                <button class="buybutton">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="imgcon">
+            <img class="imgsize" src="card.png" alt="" />
+            <div class="itemscon">
+              <img src="cardicon.png" alt="">
+              <span class="textpos hello textcolorblack">Get up to 3% Daily Cash back
+                with every purchase.</span>
+              <div class="buttoncon">
+                <button class="morebutton">Learn more</button>
+                <button class="buybutton">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="imgcon2">
+        <img class="imgsize" src="mer.png" alt="" />
+        <img class="imgsize" src="fly.png" alt="" />
+        <img class="imgsize" src="sh.png" alt="" />
+      </div>
+      <div class="tabpanel">
+        <div class="tab">
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+          <div class="tablist"></div>
+        </div>
+      </div>
+      <div class="imgcon3">
+        <div>
+          <div class="imgconback">
+            <img src="fitness.png" alt="" />
+          </div>
+        </div>
+        <div class="imgconback randb">
+          <div class="imgrandb">
+            <img src="r&b.png" alt="" />
+          </div>
+          <img class="imgconicon" src="iconmusic.svg" alt="" />
+        </div>
+        <div class="imgconback">
+          <img src="nba.png" alt="" />
+        </div>
+        <div class="imgconback">
+          <img src="fitness1.png" alt="" />
+        </div>
+        <div class="imgconback">
+          <img src="music.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
